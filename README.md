@@ -20,6 +20,13 @@ curl. I have used zlib, openssl and libssh2.
   * git clone [curl-x86_x64](https://github.com/sridharb1/curl-x86_x64.git)
     to another folder
   * Copy the contents of the folder above to the VC15 folder
+  * `curl -vV`
+  ``` shell
+  curl 7.70.0-DEV (x86_64-pc-win32) libcurl/7.70.0-DEV OpenSSL/1.1.1e libssh2/1.9.0_DEV
+Release-Date: [unreleased]
+Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp
+Features: AsynchDNS HTTPS-proxy IPv6 Largefile NTLM SSL UnixSockets
+  ```
 
 # Note #
 
