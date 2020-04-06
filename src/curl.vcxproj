@@ -88,8 +88,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
@@ -118,8 +118,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
@@ -148,8 +148,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -177,8 +177,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -240,7 +240,6 @@
     <ClCompile Include="..\..\..\..\src\tool_util.c" />
     <ClCompile Include="..\..\..\..\src\tool_vms.c" />
     <ClCompile Include="..\..\..\..\src\tool_writeout.c" />
-    <ClCompile Include="..\..\..\..\src\tool_writeout_json.c" />
     <ClCompile Include="..\..\..\..\src\tool_xattr.c" />
   </ItemGroup>
   <ItemGroup>
@@ -299,6 +298,15 @@
     <ResourceCompile Include="..\..\..\..\src\curl.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\brotli\build_folder\brotlicommon-static.vcxproj">
+      <Project>{39abfc9d-42b2-3e32-866b-ec2b980bf85c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\brotli\build_folder\brotlidec-static.vcxproj">
+      <Project>{e279dd40-3cac-3030-875b-28b50015788d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\brotli\build_folder\brotlienc-static.vcxproj">
+      <Project>{2fffa03d-a47c-3aeb-a9e9-611fe2dbba41}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\..\libssh2\build\src\libssh2.vcxproj">
       <Project>{127dc9de-814f-312c-8f30-4fe281393b38}</Project>
     </ProjectReference>

@@ -78,8 +78,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
@@ -99,8 +99,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
@@ -118,8 +118,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -140,8 +140,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>

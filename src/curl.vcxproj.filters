@@ -147,9 +147,6 @@
     <ClCompile Include="..\..\..\..\src\tool_progress.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\tool_writeout_json.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\lib\config-win32.h">
