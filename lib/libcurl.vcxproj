@@ -79,11 +79,12 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;ZLIB_WINAPI;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -100,11 +101,12 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;ZLIB_WINAPI;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;BUILDING_LIBCURL;DEBUGBUILD;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -119,7 +121,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;ZLIB_WINAPI;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -141,7 +143,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\openssl\build\openssl\$(Platform)\$(Configuration)\include;..\..\..\..\..\libssh2\include;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;ZLIB_WINAPI;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;BUILDING_LIBCURL;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -161,6 +163,7 @@
     <ClCompile Include="..\..\..\..\lib\asyn-ares.c" />
     <ClCompile Include="..\..\..\..\lib\asyn-thread.c" />
     <ClCompile Include="..\..\..\..\lib\base64.c" />
+    <ClCompile Include="..\..\..\..\lib\c-hyper.c" />
     <ClCompile Include="..\..\..\..\lib\conncache.c" />
     <ClCompile Include="..\..\..\..\lib\connect.c" />
     <ClCompile Include="..\..\..\..\lib\content_encoding.c" />
@@ -186,7 +189,10 @@
     <ClCompile Include="..\..\..\..\lib\dict.c" />
     <ClCompile Include="..\..\..\..\lib\doh.c" />
     <ClCompile Include="..\..\..\..\lib\dotdot.c" />
+    <ClCompile Include="..\..\..\..\lib\dynbuf.c" />
     <ClCompile Include="..\..\..\..\lib\easy.c" />
+    <ClCompile Include="..\..\..\..\lib\easygetopt.c" />
+    <ClCompile Include="..\..\..\..\lib\easyoptions.c" />
     <ClCompile Include="..\..\..\..\lib\escape.c" />
     <ClCompile Include="..\..\..\..\lib\file.c" />
     <ClCompile Include="..\..\..\..\lib\fileinfo.c" />
@@ -204,8 +210,10 @@
     <ClCompile Include="..\..\..\..\lib\hostip4.c" />
     <ClCompile Include="..\..\..\..\lib\hostip6.c" />
     <ClCompile Include="..\..\..\..\lib\hostsyn.c" />
+    <ClCompile Include="..\..\..\..\lib\hsts.c" />
     <ClCompile Include="..\..\..\..\lib\http.c" />
     <ClCompile Include="..\..\..\..\lib\http2.c" />
+    <ClCompile Include="..\..\..\..\lib\http_aws_sigv4.c" />
     <ClCompile Include="..\..\..\..\lib\http_chunks.c" />
     <ClCompile Include="..\..\..\..\lib\http_digest.c" />
     <ClCompile Include="..\..\..\..\lib\http_negotiate.c" />
@@ -224,6 +232,7 @@
     <ClCompile Include="..\..\..\..\lib\memdebug.c" />
     <ClCompile Include="..\..\..\..\lib\mime.c" />
     <ClCompile Include="..\..\..\..\lib\mprintf.c" />
+    <ClCompile Include="..\..\..\..\lib\mqtt.c" />
     <ClCompile Include="..\..\..\..\lib\multi.c" />
     <ClCompile Include="..\..\..\..\lib\netrc.c" />
     <ClCompile Include="..\..\..\..\lib\non-ascii.c" />
@@ -239,7 +248,6 @@
     <ClCompile Include="..\..\..\..\lib\rand.c" />
     <ClCompile Include="..\..\..\..\lib\rename.c" />
     <ClCompile Include="..\..\..\..\lib\rtsp.c" />
-    <ClCompile Include="..\..\..\..\lib\security.c" />
     <ClCompile Include="..\..\..\..\lib\select.c" />
     <ClCompile Include="..\..\..\..\lib\sendf.c" />
     <ClCompile Include="..\..\..\..\lib\setopt.c" />
@@ -267,6 +275,7 @@
     <ClCompile Include="..\..\..\..\lib\url.c" />
     <ClCompile Include="..\..\..\..\lib\urlapi.c" />
     <ClCompile Include="..\..\..\..\lib\version.c" />
+    <ClCompile Include="..\..\..\..\lib\version_win32.c" />
     <ClCompile Include="..\..\..\..\lib\warnless.c" />
     <ClCompile Include="..\..\..\..\lib\wildcard.c" />
     <ClCompile Include="..\..\..\..\lib\x509asn1.c" />
@@ -284,12 +293,14 @@
     <ClCompile Include="..\..\..\..\lib\vauth\vauth.c" />
     <ClCompile Include="..\..\..\..\lib\vquic\ngtcp2.c" />
     <ClCompile Include="..\..\..\..\lib\vquic\quiche.c" />
+    <ClCompile Include="..\..\..\..\lib\vquic\vquic.c" />
     <ClCompile Include="..\..\..\..\lib\vssh\libssh.c" />
     <ClCompile Include="..\..\..\..\lib\vssh\libssh2.c" />
     <ClCompile Include="..\..\..\..\lib\vssh\wolfssh.c" />
     <ClCompile Include="..\..\..\..\lib\vtls\bearssl.c" />
     <ClCompile Include="..\..\..\..\lib\vtls\gskit.c" />
     <ClCompile Include="..\..\..\..\lib\vtls\gtls.c" />
+    <ClCompile Include="..\..\..\..\lib\vtls\keylog.c" />
     <ClCompile Include="..\..\..\..\lib\vtls\mbedtls.c" />
     <ClCompile Include="..\..\..\..\lib\vtls\mbedtls_threadlock.c" />
     <ClCompile Include="..\..\..\..\lib\vtls\mesalink.c" />
@@ -307,6 +318,7 @@
     <ClInclude Include="..\..\..\..\include\curl\easy.h" />
     <ClInclude Include="..\..\..\..\include\curl\mprintf.h" />
     <ClInclude Include="..\..\..\..\include\curl\multi.h" />
+    <ClInclude Include="..\..\..\..\include\curl\options.h" />
     <ClInclude Include="..\..\..\..\include\curl\stdcheaders.h" />
     <ClInclude Include="..\..\..\..\include\curl\system.h" />
     <ClInclude Include="..\..\..\..\include\curl\typecheck-gcc.h" />
@@ -315,13 +327,13 @@
     <ClInclude Include="..\..\..\..\lib\amigaos.h" />
     <ClInclude Include="..\..\..\..\lib\arpa_telnet.h" />
     <ClInclude Include="..\..\..\..\lib\asyn.h" />
+    <ClInclude Include="..\..\..\..\lib\c-hyper.h" />
     <ClInclude Include="..\..\..\..\lib\config-amigaos.h" />
     <ClInclude Include="..\..\..\..\lib\config-dos.h" />
     <ClInclude Include="..\..\..\..\lib\config-mac.h" />
     <ClInclude Include="..\..\..\..\lib\config-os400.h" />
     <ClInclude Include="..\..\..\..\lib\config-plan9.h" />
     <ClInclude Include="..\..\..\..\lib\config-riscos.h" />
-    <ClInclude Include="..\..\..\..\lib\config-symbian.h" />
     <ClInclude Include="..\..\..\..\lib\config-tpf.h" />
     <ClInclude Include="..\..\..\..\lib\config-vxworks.h" />
     <ClInclude Include="..\..\..\..\lib\config-win32.h" />
@@ -341,6 +353,7 @@
     <ClInclude Include="..\..\..\..\lib\curl_get_line.h" />
     <ClInclude Include="..\..\..\..\lib\curl_gssapi.h" />
     <ClInclude Include="..\..\..\..\lib\curl_hmac.h" />
+    <ClInclude Include="..\..\..\..\lib\curl_krb5.h" />
     <ClInclude Include="..\..\..\..\lib\curl_ldap.h" />
     <ClInclude Include="..\..\..\..\lib\curl_md4.h" />
     <ClInclude Include="..\..\..\..\lib\curl_md5.h" />
@@ -354,7 +367,6 @@
     <ClInclude Include="..\..\..\..\lib\curl_range.h" />
     <ClInclude Include="..\..\..\..\lib\curl_rtmp.h" />
     <ClInclude Include="..\..\..\..\lib\curl_sasl.h" />
-    <ClInclude Include="..\..\..\..\lib\curl_sec.h" />
     <ClInclude Include="..\..\..\..\lib\curl_setup.h" />
     <ClInclude Include="..\..\..\..\lib\curl_setup_once.h" />
     <ClInclude Include="..\..\..\..\lib\curl_sha256.h" />
@@ -363,7 +375,9 @@
     <ClInclude Include="..\..\..\..\lib\dict.h" />
     <ClInclude Include="..\..\..\..\lib\doh.h" />
     <ClInclude Include="..\..\..\..\lib\dotdot.h" />
+    <ClInclude Include="..\..\..\..\lib\dynbuf.h" />
     <ClInclude Include="..\..\..\..\lib\easyif.h" />
+    <ClInclude Include="..\..\..\..\lib\easyoptions.h" />
     <ClInclude Include="..\..\..\..\lib\escape.h" />
     <ClInclude Include="..\..\..\..\lib\file.h" />
     <ClInclude Include="..\..\..\..\lib\fileinfo.h" />
@@ -375,8 +389,10 @@
     <ClInclude Include="..\..\..\..\lib\hash.h" />
     <ClInclude Include="..\..\..\..\lib\hostcheck.h" />
     <ClInclude Include="..\..\..\..\lib\hostip.h" />
+    <ClInclude Include="..\..\..\..\lib\hsts.h" />
     <ClInclude Include="..\..\..\..\lib\http.h" />
     <ClInclude Include="..\..\..\..\lib\http2.h" />
+    <ClInclude Include="..\..\..\..\lib\http_aws_sigv4.h" />
     <ClInclude Include="..\..\..\..\lib\http_chunks.h" />
     <ClInclude Include="..\..\..\..\lib\http_digest.h" />
     <ClInclude Include="..\..\..\..\lib\http_negotiate.h" />
@@ -389,6 +405,7 @@
     <ClInclude Include="..\..\..\..\lib\llist.h" />
     <ClInclude Include="..\..\..\..\lib\memdebug.h" />
     <ClInclude Include="..\..\..\..\lib\mime.h" />
+    <ClInclude Include="..\..\..\..\lib\mqtt.h" />
     <ClInclude Include="..\..\..\..\lib\multihandle.h" />
     <ClInclude Include="..\..\..\..\lib\multiif.h" />
     <ClInclude Include="..\..\..\..\lib\netrc.h" />
@@ -408,6 +425,7 @@
     <ClInclude Include="..\..\..\..\lib\setopt.h" />
     <ClInclude Include="..\..\..\..\lib\setup-os400.h" />
     <ClInclude Include="..\..\..\..\lib\setup-vms.h" />
+    <ClInclude Include="..\..\..\..\lib\setup-win32.h" />
     <ClInclude Include="..\..\..\..\lib\share.h" />
     <ClInclude Include="..\..\..\..\lib\sigpipe.h" />
     <ClInclude Include="..\..\..\..\lib\slist.h" />
@@ -431,6 +449,7 @@
     <ClInclude Include="..\..\..\..\lib\url.h" />
     <ClInclude Include="..\..\..\..\lib\urlapi-int.h" />
     <ClInclude Include="..\..\..\..\lib\urldata.h" />
+    <ClInclude Include="..\..\..\..\lib\version_win32.h" />
     <ClInclude Include="..\..\..\..\lib\warnless.h" />
     <ClInclude Include="..\..\..\..\lib\wildcard.h" />
     <ClInclude Include="..\..\..\..\lib\x509asn1.h" />
@@ -439,11 +458,13 @@
     <ClInclude Include="..\..\..\..\lib\vauth\vauth.h" />
     <ClInclude Include="..\..\..\..\lib\vquic\ngtcp2.h" />
     <ClInclude Include="..\..\..\..\lib\vquic\quiche.h" />
+    <ClInclude Include="..\..\..\..\lib\vquic\vquic.h" />
     <ClInclude Include="..\..\..\..\lib\vssh\ssh.h" />
     <ClInclude Include="..\..\..\..\lib\vssh\wolfssh.h" />
     <ClInclude Include="..\..\..\..\lib\vtls\bearssl.h" />
     <ClInclude Include="..\..\..\..\lib\vtls\gskit.h" />
     <ClInclude Include="..\..\..\..\lib\vtls\gtls.h" />
+    <ClInclude Include="..\..\..\..\lib\vtls\keylog.h" />
     <ClInclude Include="..\..\..\..\lib\vtls\mbedtls.h" />
     <ClInclude Include="..\..\..\..\lib\vtls\mbedtls_threadlock.h" />
     <ClInclude Include="..\..\..\..\lib\vtls\mesalink.h" />

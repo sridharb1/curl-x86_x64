@@ -21,9 +21,6 @@
     <ClCompile Include="..\..\..\..\lib\nonblock.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\warnless.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\lib\curl_ctype.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -120,6 +117,9 @@
     <ClCompile Include="..\..\..\..\src\tool_parsecfg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\tool_progress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\src\tool_setopt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -144,7 +144,19 @@
     <ClCompile Include="..\..\..\..\src\tool_xattr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\src\tool_progress.c">
+    <ClCompile Include="..\..\..\..\lib\warnless.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\curl_multibyte.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\version_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\dynbuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\tool_writeout_json.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -159,9 +171,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\nonblock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\warnless.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\curl_ctype.h">
@@ -260,6 +269,9 @@
     <ClInclude Include="..\..\..\..\src\tool_parsecfg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\src\tool_progress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\src\tool_sdecls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -290,13 +302,22 @@
     <ClInclude Include="..\..\..\..\src\tool_writeout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\src\tool_writeout_json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\..\src\tool_xattr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\tool_progress.h">
+    <ClInclude Include="..\..\..\..\lib\warnless.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\src\tool_writeout_json.h">
+    <ClInclude Include="..\..\..\..\lib\curl_multibyte.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\version_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\dynbuf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -89,7 +89,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;ZLIB_WINAPI;HAVE_BROTLI;_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
@@ -107,6 +107,7 @@
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -119,7 +120,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;ZLIB_WINAPI;HAVE_BROTLI;_DEBUG;_CONSOLE;DEBUGBUILD;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level4</WarningLevel>
@@ -137,6 +138,7 @@
       <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,7 +151,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;ZLIB_WINAPI;HAVE_BROTLI;NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -165,6 +167,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -178,7 +181,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>..\..\..\..\include;..\..\..\..\lib;..\..\..\..\..\zlib;..\..\..\..\..\brotli\c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;HAVE_BROTLI;NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>USE_OPENSSL;USE_LIBSSH2;USE_IPV6;HAVE_LIBSSH2_H;HAVE_LIBZ;HAVE_ZLIB;HAVE_ZLIB_H;ZLIB_WINAPI;HAVE_BROTLI;NDEBUG;_CONSOLE;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -194,6 +197,7 @@
       <AdditionalLibraryDirectories>..\..\..\..\build\Win64\VC15\$(Configuration);..\..\..\..\..\openssl\build\Win64\VC15\LIB Release;..\..\..\..\..\libssh2\build\Win64\VC15\LIB Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -201,6 +205,9 @@
     <ClCompile Include="..\..\..\..\lib\nonblock.c" />
     <ClCompile Include="..\..\..\..\lib\warnless.c" />
     <ClCompile Include="..\..\..\..\lib\curl_ctype.c" />
+    <ClCompile Include="..\..\..\..\lib\curl_multibyte.c" />
+    <ClCompile Include="..\..\..\..\lib\version_win32.c" />
+    <ClCompile Include="..\..\..\..\lib\dynbuf.c" />
     <ClCompile Include="..\..\..\..\src\slist_wc.c" />
     <ClCompile Include="..\..\..\..\src\tool_binmode.c" />
     <ClCompile Include="..\..\..\..\src\tool_bname.c" />
@@ -240,6 +247,7 @@
     <ClCompile Include="..\..\..\..\src\tool_util.c" />
     <ClCompile Include="..\..\..\..\src\tool_vms.c" />
     <ClCompile Include="..\..\..\..\src\tool_writeout.c" />
+    <ClCompile Include="..\..\..\..\src\tool_writeout_json.c" />
     <ClCompile Include="..\..\..\..\src\tool_xattr.c" />
   </ItemGroup>
   <ItemGroup>
@@ -249,6 +257,9 @@
     <ClInclude Include="..\..\..\..\lib\nonblock.h" />
     <ClInclude Include="..\..\..\..\lib\warnless.h" />
     <ClInclude Include="..\..\..\..\lib\curl_ctype.h" />
+    <ClInclude Include="..\..\..\..\lib\curl_multibyte.h" />
+    <ClInclude Include="..\..\..\..\lib\version_win32.h" />
+    <ClInclude Include="..\..\..\..\lib\dynbuf.h" />
     <ClInclude Include="..\..\..\..\src\slist_wc.h" />
     <ClInclude Include="..\..\..\..\src\tool_binmode.h" />
     <ClInclude Include="..\..\..\..\src\tool_bname.h" />
