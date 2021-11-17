@@ -474,6 +474,9 @@
     <ClCompile Include="..\..\..\..\lib\vtls\keylog.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\bufref.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\include\curl\curl.h">
@@ -957,6 +960,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\vtls\keylog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\bufref.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

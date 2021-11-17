@@ -14,18 +14,19 @@ curl. I have used zlib, openssl and libssh2.
 
 # Installation #
 
-  * git clone [curl, tested w/ v7.69.1](https://github.com/curl/curl.git)
-  * I switched to the released 7.69.1 branch.
+  * git clone [curl, tested w/ v7.79.1](https://github.com/curl/curl.git)
+  * I switched to the released 7.79.1 branch.
   * git clone [curl-x86_x64](https://github.com/sridharb1/curl-x86_x64.git)
     to another folder
   * Copy the contents of this folder downloaded above to the projects/Windows/VC15
     folder of the curl source tree. Let it overwrite files as needed.
   * `curl -vV` (output of my curl.exe that you can compare to verify)
   ``` shell
-  curl 7.75.0-DEV (x86_64-pc-win32) libcurl/7.75.0-DEV OpenSSL/1.1.1j zlib/1.2.11 brotli/1.0.9 libssh2/1.9.0_DEV
+  curl 7.79.1-DEV (x86_64-pc-win32) libcurl/7.79.1-DEV OpenSSL/1.1.1m zlib/1.2.11 brotli/1.0.9 libssh2/1.9.0_DEV
   Release-Date: [unreleased]
   Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mqtt pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp
-  Features: AsynchDNS HTTPS-proxy IPv6 Largefile NTLM SSL Unicode UnixSockets alt-svc brotli libz
+  Features: AsynchDNS Debug HSTS HTTPS-proxy IPv6 Largefile NTLM SSL
+  Unicode UnixSockets alt-svc brotli libz
   ```
 
 # Note #
